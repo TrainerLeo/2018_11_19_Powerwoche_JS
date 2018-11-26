@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS-Basics</title>
+<!--
+        <link rel="stylesheet" href="dateipfadZumCSSFile">
+        <script scr="01_JS-Basics.js" defer></script> 
+-->
+    <style>
+        #demo-div {
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        #invisible-div01,
+        #invisible-div02,
+        #invisible-div03 {
+            background-color: aquamarine;
+            border: 2px solid darkcyan;
+            padding: 20px 50px;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        #invisible-div01 {
+            visibility: hidden;
+            /* visibility: visible; */
+        }
+
+        #invisible-div02 {
+            display: none;
+            /* display: block; */
+        }
+
+        #invisible-div03 {
+            opacity: 0;
+            /* opacity: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="javascript:history.back();">Zurück</a> -->
+    <noscript>Bitte aktivieren Sie JavaScript in Ihrem Browser!</noscript>
+
+    <div id="invisible-div01">1 Wir verwenden Cookies...!</div>
+    <div id="invisible-div02">2 Wir verwenden Cookies...!</div>
+    <div id="invisible-div03">3 Wir verwenden Cookies...!</div>
+    <div id="demo-div">
+        Testtext
+    </div>
+
+    <button id="btn-ok" onclick="myFunction();">OK</button>
+    <button id="btn-start">Start</button>
+
+    <script>
+
+        /* Variablendeklaration */
+        var x;
+        var i, text, firstName;
+
+
+        /* Initialisierung */
+        x = 5;
+
+        /*  
+         x = x + 3; //8
+         x = x + 2; // 10
+ 
+         x += 3; // 8
+         x += 2; // 10 
+         */
+
+        var y = '5';
+        var z, lastName, a = 3;
+
+        /* Konstante */
+        const mwst = 0.19;
+
+        /* Datentypen */
+
+        // number
+        // 5, 6, 197, 5.3, 6.2,...
+        // 123e5 = 12300000, 123e-5 = 0.00123
+
+        // String
+        // text01 = "Das ist ein String.";
+        // text02 = "Das ist ein 'String'.";
+        // text03 = 'Das ist ein "String".';
+
+        // Boolean
+        // true/ false
+
+        // Objects
+        // null
+
+        // function
+        // undefined
+
+        /* console.log(x === y); */
+
+        text = "Hallo";
+        firstName = "Leo";
+
+        /* console.log(text + ' ' + firstName + '!'); */
+
+        /* console.log( typeof (x + y)); */
+
+
+        console.log(typeof lastName);
+
+        var demoDiv = document.getElementById('demo-div');
+
+        function myFunction() {
+
+            /* document.getElementById('demo-div').style.backgroundColor = "blue"; */
+
+            demoDiv.style.backgroundColor = "red";
+
+            console.log(demoDiv.style.backgroundColor);
+
+            demoDiv.innerHTML += '<p>' + text + " " + firstName + "!</p>";
+
+        }
+
+        document.getElementById('btn-start').addEventListener('click', function(){
+            alert('Test funktioniert!');
+        });
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

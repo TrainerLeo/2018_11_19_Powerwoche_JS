@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>try-catch</title>
+    <style>
+        #demo{
+            margin-top: 10px;
+            background-color: green;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="inp-test">
+    <button id="btn-ok" onclick="myFunction();">OK</button>
+    <div id="demo"></div>
+
+
+    <script>
+        var testInp = document.getElementById('inp-test');
+        var okBtn = document.getElementById('btn-ok');
+        var demoDiv = document.getElementById('demo');
+
+        function myFunction(){
+            var inpValue = testInp.value;
+
+            try{
+                if(inpValue == '') throw ' ist leer!';
+                if(isNaN(inpValue)) throw ' ist keine Zahl!';
+            }
+            catch(err){
+                demoDiv.innerHTML = 'Eingabewert' + err;
+            }
+        }
+    </script>
+</body>
+</html>

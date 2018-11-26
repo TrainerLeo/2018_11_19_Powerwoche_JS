@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schleife</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+
+    <script>
+
+        var demoDiv = document.getElementById('demo');
+
+        /* While-Schleife (while-loop) */
+
+        var text = "";
+        /* 
+        var i = 0;
+
+        while(i < 10){
+            text += 'Zähler: ' + i + '<br/>';
+            i++;
+        } 
+        */
+
+
+
+        /* For-Schleife */
+
+        for (var i = 0; i < 10; i++) {
+            text += 'Zähler: ' + i + '<br/>';
+        }
+
+        /* 
+        for(var i = 0; i < arrayName.length; i++){
+            //toller Code
+        } 
+        */
+
+
+
+        demoDiv.innerHTML = text;
+
+
+
+    </script>
+</body>
+
+</html>

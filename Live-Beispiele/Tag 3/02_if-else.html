@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if-else</title>
+</head>
+
+<body>
+    <input type="text" id="test">
+    <button id="btn-ok" onclick="testFunction();">OK</button>
+    <div id="demo"></div>
+
+    <script>
+        var testInp = document.getElementById('test');
+        var okBtn = document.getElementById('btn-ok');
+        var demoDiv = document.getElementById('demo');
+
+
+        function testFunction() {
+
+            var testOutput = testInp.value;
+
+            if (testOutput == 3) {
+                alert('Input ist 3!');
+            }
+            else if (testOutput <= 10 && testOutput >= 0) {
+                alert('Danke!');
+            }
+            else {
+                alert('Geben Sie einen Wert zwischen 0 und 10 ein!');
+            }
+
+            
+
+        }
+
+/*         console.log(Number('')); */
+
+        /* Kurzschreibweise */
+
+    /*  
+        x = 3; 
+        y = 5;
+        (x == y) ? alert('Stimmt!') : alert('Stimmt nicht!'); 
+        
+        console.log(isNaN(x));
+
+        //      == "" (Leerstring)
+    */
+
+
+    </script>
+</body>
+
+</html>

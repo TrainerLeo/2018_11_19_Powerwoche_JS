@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .flex-container{
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            /* horizontale Ausrichtung: */
+            justify-content: center;
+
+            /* vertikale Ausrichtung: */
+            align-items: stretch;
+
+            /* flex-direction: column; */
+
+            height: 500px;
+            /* padding: 50px; */
+            
+        }
+
+        .flex-item{
+            background-color: cornflowerblue;
+            border: 2px solid midnightblue;
+            width: 200px;
+            /* height: 200px; */
+            font-size: 2em;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <!-- <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div> -->
+    </div>
+
+</body>
+</html>

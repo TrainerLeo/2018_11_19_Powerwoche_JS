@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objekte</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+    <script>
+        var demoDiv = document.getElementById('demo');
+
+        /* 
+        var Person = {
+            firstName: 'James',
+            lastName: 'Bond',
+            customerId: '007',
+            age: 40,
+            fullName: function(){
+                return this.firstName + ' ' + this.lastName;
+            }
+        };
+
+        // dot-notation 
+        demoDiv.innerHTML = Person.firstName;
+        // bracket-notation
+        demoDiv.innerHTML += '<br/>' + Person['lastName'];
+
+        demoDiv.innerHTML += '<br/>' + Person.fullName(); 
+        */
+
+       /* Konstruktor */
+
+       function Person(fn, ln, a){
+           this.firstName = fn;
+           this.lastName = ln;
+           this.age = a;
+       }
+
+       var Leo = new Person('Leonard', 'Hlavin', 37);
+
+       /* demoDiv.innerHTML = Leo.firstName; */
+
+       function Car(model, driver){
+           this.model = model;
+           this.driver = driver;
+       }
+
+
+       var companyCar01 = new Car('BWM', Leo);
+
+       demoDiv.innerHTML = companyCar01.driver.lastName;
+
+
+    </script>
+</body>
+</html>

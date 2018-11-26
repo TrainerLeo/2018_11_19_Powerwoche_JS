@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boxmodell</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        #demo02 {
+            /* 
+            border-width: 10px;
+            border-style: solid;
+            border-color: midnightblue; 
+            */
+            /* shorthand property (Kurzschreibweise) */
+            border: 10px solid midnightblue;
+        }
+
+        #demo03 {
+            padding: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: midnightblue;
+        }
+
+        #demo04 {
+            padding: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: midnightblue;
+            box-sizing: border-box;
+        }
+
+        #demo06 {
+            height: initial;
+            padding: 20px 30px 0 15px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: midnightblue;
+            box-sizing: border-box;
+        }
+
+        #demo07 {
+            padding: 10px 30px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: midnightblue;
+            box-sizing: border-box;
+        }
+        #inner{
+            width: 100%;
+            height: 100%;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo01"></div>
+    <div id="demo02"></div>
+    <div id="demo03">
+        Lorem ipsum dolor sit amet co nsectetur adipisicing elit. Temporibus, quas!
+    </div>
+    <div id="demo04">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dignissimos!
+    </div>
+    <div id="demo05"></div>
+    <div id="demo06">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, laudantium.
+    </div>
+    <div id="demo07">
+        <div id="inner"></div>
+    </div>
+</body>
+
+</html>

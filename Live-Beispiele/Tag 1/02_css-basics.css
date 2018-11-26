@@ -1,0 +1,31 @@
+body{
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+/* Typselektoren */
+p{
+    color: green;
+    font-family: Dosis;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Klassenselektor */
+.my-great-class{
+    font-style: italic;
+    background-color: cornflowerblue;
+    width: 400px;
+    /* height: 200px; */
+}
+
+/* ID-Selektor */
+#my-great-id{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: bisque;
+    text-align: center;
+}

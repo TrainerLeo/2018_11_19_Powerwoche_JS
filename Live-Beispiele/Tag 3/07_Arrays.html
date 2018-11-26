@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+    <style>
+        #demo {
+            min-height: 50px;
+        }
+
+        button {
+
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="demo"></div>
+    <button id="btn-ok" onclick="textOutput();">Fruchtsalat</button>
+    <button onclick="addMango();">Plus Mango</button>
+    <button onclick="removeLast();">Letztes Weglöschen</button>
+    <button onclick="fillIn();">Einfüllen</button>
+    <button onclick="combineArrays();">Kombinieren</button>
+    <button onclick="alphabetical();">Ordnen</button>
+
+    <script>
+
+        var demoDiv = document.getElementById('demo');
+
+        var fruitSalad = ['Banane', 'Apfel', 'Kiwi'];
+
+        //   Stelle:          0         1        2
+        // length:            1         2        3
+
+        function textOutput(){
+            demoDiv.innerHTML = fruitSalad.join(', ');
+        }
+
+        function addMango(){
+            fruitSalad.push('Mango');
+            demoDiv.innerHTML += '<br/>' + fruitSalad.join(', ');
+        }
+
+        function removeLast(){
+            fruitSalad.pop();
+            demoDiv.innerHTML += '<br/>' + fruitSalad.join(', ');
+        }
+
+        function fillIn(){
+            fruitSalad.splice(1, 0, 'Birne', 'Pflaume');
+            demoDiv.innerHTML += '<br/>' + fruitSalad.join(', ');
+        }
+
+        /* 
+        .shift()
+        .unshift()
+        */
+
+       var citrusFruits = ['Orange', 'Kumquat', 'Mandarine'];
+        var allFruits;
+       function combineArrays(){
+           allFruits = fruitSalad.concat(citrusFruits);
+           demoDiv.innerHTML += '<br/>' + allFruits.join(', ');
+       }
+
+       function alphabetical(){
+           allFruits.sort();
+           demoDiv.innerHTML += '<br/>' + allFruits.join(', ');
+       }
+
+       console.log(fruitSalad[3]); 
+
+
+
+    </script>
+
+</body>
+
+</html>
